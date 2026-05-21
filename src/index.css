@@ -1,0 +1,124 @@
+/* Aqui fica os estilos globais da aplicação -> main.jsx */
+
+:root {
+  /* Cores */
+  --preto: #0c0c0c;
+  --branco: #d5d5d5;
+  --laranja: #ff4b00;
+  --cinza: #242424;
+  --branco-btn: #ebebeb;
+  --branco2: #b4b4b4;
+  --error-color: #ca2626;
+
+  /* Fontes */
+  --font-gamePaused: "GamePaused", sans-serif;
+  --font-upheavtt: "Upheavtt", sans-serif;
+  --font-retroGaming: "RetroGaming", sans-serif;
+  --font-dmSansRegular: "DMSansRegular", sans-serif;
+  --font-dmSansBold: "DMSansBold", sans-serif;
+
+  /* Padrões de fontes */
+  --padrao-opacity: 70%;
+  --miniHome-opacity: 50%;
+  --h1-letterSpacing: 2%;
+  --padrao-letterSpacing: 7%;
+
+  /* Desktop */
+  --home-dk: 8rem/122% var(--font-gamePaused);
+  --h1-dk: 4rem / normal var(--font-gamePaused);
+  --h2-dk: 3rem / normal var(--font-gamePaused);
+  --h3Modal-dk: 2rem / normal var(--font-gamePaused);
+
+  --botao-dk: 2rem / normal var(--font-upheavtt);
+  --botaoModal-dk: 1rem / normal var(--font-upheavtt);
+
+  --nav-dk: 1.5rem / normal var(--font-retroGaming);
+  --miniCard-dk: 1rem / normal var(--font-retroGaming);
+  --cardProj-dk: 1.25rem / normal var(--font-retroGaming);
+
+  --miniHome-dk: 1.25rem/120% var(--font-dmSansRegular);
+  --sub-dk: 1.125rem/120% var(--font-dmSansRegular);
+  --ph-dk: 1.5rem/150% var(--font-dmSansRegular);
+  --info-dk: 1.5rem/100% var(--font-dmSansRegular);
+  --footer-dk: 1.5rem/160% var(--font-dmSansBold);
+  --inputTitle-dk: 2rem/150% var(--font-dmSansBold);
+  --phModal-dk: 1.25rem/160% var(--font-dmSansRegular);
+
+  /* Mobile */
+  --home-mb: 4rem/80% var(--font-gamePaused);
+  --h1-mb: 2.25rem / normal var(--font-gamePaused);
+  --h2-mb: 1.5rem / normal var(--font-gamePaused);
+  --h3Modal-mb: 1.25rem / normal var(--font-gamePaused);
+
+  --botao-mb: 1rem / normal var(--font-upheavtt);
+  --botaoModal-mb: 0.75rem / normal var(--font-upheavtt);
+
+  --nav-mb: 0.75rem / normal var(--font-retroGaming);
+  --miniHome-mb: 0.625rem / normal var(--font-retroGaming);
+  --cardProj-mb: 0.875rem / normal var(--font-retroGaming);
+
+  --miniHome-mb: 0.625rem/120% var(--font-dmSansRegular);
+  --sub-mb: 0.5rem/120% var(--font-dmSansRegular);
+  --ph-mb: 0.75rem/144% var(--font-dmSansRegular);
+  --info-mb: 0.625rem/100% var(--font-dmSansRegular);
+  --footer-mb: 0.875rem/100% var(--font-dmSansBold);
+  --inputTitle-dk: 1rem/150% var(--font-dmSansBold);
+  --phModal-mb: 1rem/160% var(--font-dmSansRegular);
+}
+
+/* Importação de fontes */
+@font-face {
+  font-family: "GamePaused";
+  src: local("GamePaused"),
+    url("./assets/fonts/GamePaused.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Upheavtt";
+  src: local("Upheavtt"), url("./assets/fonts/Upheavtt.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RetroGaming";
+  src: local("RetroGaming"),
+    url("./assets/fonts/RetroGaming.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSansRegular";
+  src: local("DMSansRegular"),
+    url("./assets/fonts/DMSansRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSansBold";
+  src: local("DMSansBold"),
+    url("./assets/fonts/DMSansBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--preto);
+}
+
+h1 {
+  font: var(--home-mb);
+  color: var(--branco);
+}
+
+/* @media (max-width: 1024px) {
+  } */
