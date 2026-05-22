@@ -18,10 +18,10 @@
   --font-dmSansBold: "DMSansBold", sans-serif;
 
   /* Padrões de fontes */
-  --padrao-opacity: 70%;
-  --miniHome-opacity: 50%;
-  --h1-letterSpacing: 2%;
-  --padrao-letterSpacing: 7%;
+  --padrao-opacity: 0.7; /* 70% */
+  --miniHome-opacity: 0.5; /* 50% */
+  --h1-letterSpacing: 0.02em; /* 2% */
+  --padrao-letterSpacing: 0.07em; /* 7% */
 
   /* Desktop */
   --home-dk: 8rem/122% var(--font-gamePaused);
@@ -113,11 +113,6 @@ body {
   width: 100dvw;
   height: 100dvh;
   background-color: var(--preto);
-}
-
-h1 {
-  font: var(--home-mb);
-  color: var(--branco);
 }
 
 /* @media (max-width: 1024px) {
