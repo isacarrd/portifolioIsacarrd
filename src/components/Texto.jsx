@@ -25,6 +25,7 @@ function Texto({
         font: font,
         letterSpacing: letterSpacing,
         opacity: opacity,
+        textDecoration: Txt === "a" ? "none" : undefined,
         transition: Txt === "a" ? "color 0.3s ease" : "none",
       }}
       onMouseEnter={Txt === "a" ? () => setIsHovered(true) : undefined}
