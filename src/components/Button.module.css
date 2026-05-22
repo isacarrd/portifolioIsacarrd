@@ -1,0 +1,56 @@
+/* Base do botão */
+.btnBase {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Tamanhos & espeficicações */
+.btnDesktopPadrao {
+  /* 22px */
+  padding: 1.375rem;
+}
+
+.btnDesktopHeader {
+  /* 24px */
+  padding: 1.5rem;
+}
+
+.btnMobilePadrao {
+  /* 12px */
+  padding: 0.75rem;
+}
+
+.btnMobileHeader {
+  /* 4px */
+  padding: 0.25rem;
+}
+
+/* Estilos */
+
+.btnHeader {
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.btnPreenchido {
+  background-color: var(--laranja);
+  border: 2px solid var(--laranja);
+}
+
+.btnPreenchido:hover {
+  background-color: transparent;
+  border: 2px solid var(--laranja);
+}
+
+.btnVazado {
+  background-color: transparent;
+  border: 2px solid var(--laranja);
+}
+
+.btnVazado:hover {
+  background-color: transparent;
+  border: 2px solid var(--branco);
+}
