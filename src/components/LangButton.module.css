@@ -1,0 +1,129 @@
+/* Base */
+.langContainer {
+  width: fit-content;
+  padding: 8px;
+  border-radius: 40px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.langContainer:hover .arrowContainer:hover,
+.langContainer:hover .arrowContainer {
+  opacity: 1;
+  transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.langContainer.open {
+  gap: 6px;
+  border-radius: 26px;
+  background-color: transparent;
+  transition: all 800ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+/* CONTAINER DE MENSAGEM E ÁREA ATIVA */
+.activeLang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeArea {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+}
+
+/* Bandeiras */
+.flagCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid var(--laranja);
+}
+
+.flag {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.br {
+  background-image: url("/src/assets/images/icons/brDk.svg");
+}
+.us {
+  background-image: url("/src/assets/images/icons/usDk.svg");
+}
+
+/* Container de Seta */
+.arrowContainer {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: #3b3b3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.arrowContainerDown {
+  background-image: url("/src/assets/images/icons/selectDown-dk.svg");
+  background-position: center center;
+}
+.arrowContainerTop {
+  background-image: url("/src/assets/images/icons/selectTOP-dk.svg");
+  background-position: center center;
+}
+
+.dropdownArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background-color: #3b3b3b;
+  border-radius: 40px;
+  padding: 6px;
+  animation: slideDown 0.2s ease forwards;
+  cursor: pointer;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade Mobile */
+@media (max-width: 1024px) {
+  .flagCont {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--laranja);
+  }
+  .flag {
+    width: 16px;
+    height: 16px;
+  }
+  .arrowContainer {
+    width: 20px;
+    height: 20px;
+  }
+}
