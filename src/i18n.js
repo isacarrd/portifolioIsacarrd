@@ -36,6 +36,10 @@ const resources = {
         conteudoTitle: "Conteúdo",
         conteudo_desc: "Conteúdo, aquilo que deseja enviar: crítica, proposta, etc."
       },
+      cardProj: {
+        hover: 'Info+',
+        proj1: "heartOfPoets"
+      },
       modalProj: {
         subtitle: "Página com navegação simples, imitando a estilização de uma rede social, sendo voltada para poesias e fotografia.",
       }
@@ -73,6 +77,10 @@ const resources = {
         assunto_desc: "Subject or title of the message",
         conteudoTitle: "Content",
         conteudo_desc: "Content, that which you wish to send: criticism, proposal, etc."
+      },
+      cardProj: {
+        hover: 'Info +',
+        proj1: "heartOfPoets"
       },
       modalProj: {
         subtitle: "A page with simple navigation, mimicking the style of a social network, focused on poetry and photography.",
