@@ -5,6 +5,7 @@ function Texto({
   children,
   color,
   font,
+  webkitTextStroke = "none",
   letterSpacing = 0,
   opacity = 1,
   ...props
@@ -18,11 +19,16 @@ function Texto({
     corFinal = isHovered ? "var(--laranja)" : color || "var(--branco)";
   }
 
+  // const textoBorda = {
+  //   WebkitTextStroke: '2px black'
+  // }
+
   return (
     <Txt
       style={{
         color: corFinal,
         font: font,
+        WebkitTextStroke: webkitTextStroke,
         letterSpacing: letterSpacing,
         opacity: opacity,
         textDecoration: Txt === "a" ? "none" : undefined,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Texto from "./Texto";
+import Texto from "../ui/Texto";
 import styles from "./LangButton.module.css";
 
 function LangButton() {
