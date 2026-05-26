@@ -24,48 +24,51 @@
   --padrao-letterSpacing: 0.07em; /* 7% */
 
   /* Desktop */
-  --home-dk: 8rem/122% var(--font-gamePaused);
-  --h1-dk: 4rem / normal var(--font-gamePaused);
-  --h2-dk: 3rem / normal var(--font-gamePaused);
-  --h3Modal-dk: 2rem / normal var(--font-gamePaused);
+  --home: 8rem/122% var(--font-gamePaused);
+  --h1: 4rem / normal var(--font-gamePaused);
+  --h2: 3rem / normal var(--font-gamePaused);
+  --h3Modal: 2rem / normal var(--font-gamePaused);
 
-  --botao-dk: 2rem / normal var(--font-upheavtt);
-  --botaoModal-dk: 1rem / normal var(--font-upheavtt);
+  --botao: 2rem / normal var(--font-upheavtt);
+  --botaoModal: 1rem / normal var(--font-upheavtt);
 
-  --nav-dk: 1.5rem / normal var(--font-retroGaming);
-  --miniCard-dk: 1rem / normal var(--font-retroGaming);
-  --cardProj-dk: 1.25rem / normal var(--font-retroGaming);
+  --nav: 1.5rem / normal var(--font-retroGaming);
+  --miniCard: 1rem / normal var(--font-retroGaming);
+  --cardProj: 1.25rem / normal var(--font-retroGaming);
 
-  --miniHome-dk: 1.25rem/120% var(--font-dmSansRegular);
-  --sub-dk: 1.125rem/120% var(--font-dmSansRegular);
-  --ph-dk: 1.5rem/150% var(--font-dmSansRegular);
-  --info-dk: 1.5rem/100% var(--font-dmSansRegular);
-  --footer-dk: 1.5rem/160% var(--font-dmSansBold);
-  --inputTitle-dk: 2rem/150% var(--font-dmSansBold);
-  --phModal-dk: 1.25rem/160% var(--font-dmSansRegular);
-
-  /* Mobile */
-  --home-mb: 4rem/80% var(--font-gamePaused);
-  --h1-mb: 2.25rem / normal var(--font-gamePaused);
-  --h2-mb: 1.5rem / normal var(--font-gamePaused);
-  --h3Modal-mb: 1.25rem / normal var(--font-gamePaused);
-
-  --botao-mb: 1rem / normal var(--font-upheavtt);
-  --botaoModal-mb: 0.75rem / normal var(--font-upheavtt);
-
-  --nav-mb: 0.75rem / normal var(--font-retroGaming);
-  --miniHome-mb: 0.625rem / normal var(--font-retroGaming);
-  --cardProj-mb: 0.875rem / normal var(--font-retroGaming);
-
-  --miniHome-mb: 0.625rem/120% var(--font-dmSansRegular);
-  --sub-mb: 0.5rem/120% var(--font-dmSansRegular);
-  --ph-mb: 0.75rem/144% var(--font-dmSansRegular);
-  --info-mb: 0.625rem/100% var(--font-dmSansRegular);
-  --footer-mb: 0.875rem/100% var(--font-dmSansBold);
-  --inputTitle-dk: 1rem/150% var(--font-dmSansBold);
-  --phModal-mb: 1rem/160% var(--font-dmSansRegular);
+  --miniHome: 1.25rem/120% var(--font-dmSansRegular);
+  --sub: 1.125rem/120% var(--font-dmSansRegular);
+  --ph: 1.5rem/150% var(--font-dmSansRegular);
+  --info: 1.5rem/100% var(--font-dmSansRegular);
+  --footer: 1.5rem/160% var(--font-dmSansBold);
+  --inputTitle: 2rem/150% var(--font-dmSansBold);
+  --phModal: 1.25rem/160% var(--font-dmSansRegular);
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --home-mb: 4rem/80% var(--font-gamePaused);
+    --h1-mb: 2.25rem / normal var(--font-gamePaused);
+    --h2-mb: 1.5rem / normal var(--font-gamePaused);
+    --h3Modal-mb: 1.25rem / normal var(--font-gamePaused);
+
+    --botao-mb: 1rem / normal var(--font-upheavtt);
+    --botaoModal-mb: 0.75rem / normal var(--font-upheavtt);
+
+    --nav-mb: 0.75rem / normal var(--font-retroGaming);
+    --miniHome-mb: 0.625rem / normal var(--font-retroGaming);
+    --cardProj-mb: 0.875rem / normal var(--font-retroGaming);
+
+    --miniHome-mb: 0.625rem/120% var(--font-dmSansRegular);
+    --sub-mb: 0.5rem/120% var(--font-dmSansRegular);
+    --ph-mb: 0.75rem/144% var(--font-dmSansRegular);
+    --info-mb: 0.625rem/100% var(--font-dmSansRegular);
+    --footer-mb: 0.875rem/100% var(--font-dmSansBold);
+    --inputTitle-mb: 1rem/150% var(--font-dmSansBold);
+    --phModal-mb: 1rem/160% var(--font-dmSansRegular);
+  }
+}
 /* Importação de fontes */
 @font-face {
   font-family: "GamePaused";
