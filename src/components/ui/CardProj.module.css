@@ -1,0 +1,51 @@
+.cardBase {
+  position: relative;
+  overflow: hidden;
+  width: 21.125rem;
+  height: 11.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 4.625rem;
+  border-left: 4px solid var(--laranja);
+  transition: all 0.1s cubic-bezier(0.58, 0.45, 0.7, 0.43);
+    background-color: rgba(34, 34, 34, 0.5);
+}
+
+.contCard {
+  position: relative;
+  z-index: 2;
+}
+
+.cardBase:hover {
+  border-left: 12px solid var(--laranja);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.imgBanner {
+  opacity: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .cardBase {
+    width: 12.25rem;
+    height: 6.125rem;
+    padding: 2.5rem 2rem;
+  }
+}
