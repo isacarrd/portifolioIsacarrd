@@ -19,10 +19,6 @@ function Texto({
     corFinal = isHovered ? "var(--laranja)" : color || "var(--branco)";
   }
 
-  // const textoBorda = {
-  //   WebkitTextStroke: '2px black'
-  // }
-
   return (
     <Txt
       style={{
