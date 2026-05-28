@@ -48,25 +48,25 @@
 /* Mobile */
 @media (max-width: 768px) {
   :root {
-    --home-mb: 4rem/80% var(--font-gamePaused);
-    --h1-mb: 2.25rem / normal var(--font-gamePaused);
-    --h2-mb: 1.5rem / normal var(--font-gamePaused);
-    --h3Modal-mb: 1.25rem / normal var(--font-gamePaused);
+    --home: 4rem/80% var(--font-gamePaused);
+    --h1: 2.25rem / normal var(--font-gamePaused);
+    --h2: 1.5rem / normal var(--font-gamePaused);
+    --h3Modal: 1.25rem / normal var(--font-gamePaused);
 
-    --botao-mb: 1rem / normal var(--font-upheavtt);
-    --botaoModal-mb: 0.75rem / normal var(--font-upheavtt);
+    --botao: 1rem / normal var(--font-upheavtt);
+    --botaoModal: 0.75rem / normal var(--font-upheavtt);
 
-    --nav-mb: 0.75rem / normal var(--font-retroGaming);
-    --miniHome-mb: 0.625rem / normal var(--font-retroGaming);
-    --cardProj-mb: 0.875rem / normal var(--font-retroGaming);
+    --nav: 0.75rem / normal var(--font-retroGaming);
+    --miniHome: 0.625rem / normal var(--font-retroGaming);
+    --cardProj: 0.875rem / normal var(--font-retroGaming);
 
-    --miniHome-mb: 0.625rem/120% var(--font-dmSansRegular);
-    --sub-mb: 0.5rem/120% var(--font-dmSansRegular);
-    --ph-mb: 0.75rem/144% var(--font-dmSansRegular);
-    --info-mb: 0.625rem/100% var(--font-dmSansRegular);
-    --footer-mb: 0.875rem/100% var(--font-dmSansBold);
-    --inputTitle-mb: 1rem/150% var(--font-dmSansBold);
-    --phModal-mb: 1rem/160% var(--font-dmSansRegular);
+    --miniHome: 0.625rem/120% var(--font-dmSansRegular);
+    --sub: 0.5rem/120% var(--font-dmSansRegular);
+    --ph: 0.75rem/144% var(--font-dmSansRegular);
+    --info: 0.625rem/100% var(--font-dmSansRegular);
+    --footer: 0.875rem/100% var(--font-dmSansBold);
+    --inputTitle: 1rem/150% var(--font-dmSansBold);
+    --phModal: 1rem/160% var(--font-dmSansRegular);
   }
 }
 /* Importação de fontes */
@@ -106,6 +106,7 @@
   font-style: normal;
 }
 
+/* Estilos gerais */
 * {
   padding: 0%;
   margin: 0%;
@@ -118,5 +119,6 @@ body {
   background-color: var(--preto);
 }
 
-/* @media (max-width: 1024px) {
-  } */
+a{
+  text-decoration: none;
+}
