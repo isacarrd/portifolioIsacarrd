@@ -30,11 +30,14 @@ const resources = {
       },
       form: {
         title: "Entre em contato",
-        email_desc: "Endereço de Email",
-        assuntoTitle: "Assunto",
-        assunto_desc: "Assunto ou título da mensagem",
-        conteudoTitle: "Conteúdo",
-        conteudo_desc: "Conteúdo, aquilo que deseja enviar: crítica, proposta, etc."
+        nomeTitle: "Nome:",
+        nomeDesc: "Seu nome aqui.",
+        emailTitle: "Email:",
+        emailDesc: "Endereço de Email.",
+        assuntoTitle: "Assunto:",
+        assuntoDesc: "Assunto ou título da mensagem.",
+        conteudoTitle: "Conteúdo:",
+        conteudoDesc: "Conteúdo, aquilo que deseja enviar: crítica, proposta, etc."
       },
       cardProj: {
         hover: 'Info+',
@@ -72,11 +75,14 @@ const resources = {
       },
       form: {
         title: "Get in touch",
-        email_desc: "Email Address",
-        assuntoTitle: "Subject",
-        assunto_desc: "Subject or title of the message",
-        conteudoTitle: "Content",
-        conteudo_desc: "Content, that which you wish to send: criticism, proposal, etc."
+        nomeTitle: "Name:",
+        nomeDesc: "Your name here.",
+        emailTitle: "Email:",
+        emailDesc: "Email Address.",
+        assuntoTitle: "Subject:",
+        assuntoDesc: "Subject or title of the message.",
+        conteudoTitle: "Content:",
+        conteudoDesc: "Content, that which you wish to send: criticism, proposal, etc."
       },
       cardProj: {
         hover: 'Info +',
