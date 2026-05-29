@@ -12,7 +12,7 @@ function SecaoProjetos() {
         textoPadrao={t("cardProj.proj1")}
         textoHover={t("cardProj.hover")}
         bgImage={projHearOfPoets}
-        bgAlt={"Projeto Mercadinho Aragão"}
+        bgAlt={"Projeto Heart Of Poets"}
       />
     </div>
   );
