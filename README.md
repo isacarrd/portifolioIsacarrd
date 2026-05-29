@@ -12,7 +12,7 @@
 
 <p align="center">
      <a href="#">🚦 Projeto</a>
-     <a href="#">🚧 Figma</a>
+     <a href="https://www.figma.com/community/file/1642193222061811502">🚧 Figma</a>
 </p>
 
 <h2 id="layout">🎨 Visão da página</h2>
