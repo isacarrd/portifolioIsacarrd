@@ -41,7 +41,8 @@
   --ph: 1.5rem/150% var(--font-dmSansRegular);
   --info: 1.5rem/100% var(--font-dmSansRegular);
   --footer: 1.5rem/160% var(--font-dmSansBold);
-  --inputTitle: 2rem/150% var(--font-dmSansBold);
+  --inputTitle: 1.25rem/150% var(--font-dmSansBold);
+  --inputPlace: 1rem/normal var(--font-dmSansRegular);
   --phModal: 1.25rem/160% var(--font-dmSansRegular);
 }
 
@@ -66,6 +67,7 @@
     --info: 0.625rem/100% var(--font-dmSansRegular);
     --footer: 0.875rem/100% var(--font-dmSansBold);
     --inputTitle: 1rem/150% var(--font-dmSansBold);
+    --inputPlace: .75rem/normal var(--font-dmSansRegular);
     --phModal: 1rem/160% var(--font-dmSansRegular);
   }
 }
@@ -114,6 +116,7 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100dvw;
   height: 100dvh;
   background-color: var(--preto);
