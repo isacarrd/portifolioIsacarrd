@@ -1,19 +1,22 @@
+import { forwardRef } from "react";
 import styles from "./Button.module.css";
 
-function Button({
-  tamanho = "btnDesktopPadrao",
-  estilo = "btnPreenchido",
-  children,
-  ...props
-}) {
-
+const Button = forwardRef(function Button(
+  {
+    tamanho = "btnDesktopPadrao",
+    estilo = "btnPreenchido",
+    children,
+    ...props
+  },
+  ref
+) {
   const buttonStyles = `${styles.btnBase} ${styles[tamanho]} ${styles[estilo]}`;
 
   return (
-    <button className={buttonStyles} {...props}>
+    <button ref={ref} className={buttonStyles} {...props}>
       {children}
     </button>
   );
-}
+});
 
 export default Button;
