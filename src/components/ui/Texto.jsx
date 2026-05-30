@@ -5,6 +5,7 @@ function Texto({
   children,
   color,
   font,
+  textAlign,
   webkitTextStroke = "none",
   letterSpacing = 0,
   opacity = 1,
@@ -27,6 +28,7 @@ function Texto({
         WebkitTextStroke: webkitTextStroke,
         letterSpacing: letterSpacing,
         opacity: opacity,
+        textAlign:textAlign,
         textDecoration: Txt === "a" ? "none" : undefined,
         transition: Txt === "a" ? "color 0.3s ease" : "none",
       }}
