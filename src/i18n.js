@@ -10,6 +10,7 @@ const resources = {
         btnContato: "Contate-me",
         btnProjeto: "Ver Projeto",
         btnRepositorio: "Ver Repositório",
+        btnFechar: "Fechar"
       },
       header: {
         about: "Sobre",
@@ -50,8 +51,9 @@ const resources = {
         hover: 'Info+',
         proj1: "heartOfPoets"
       },
-      modalProj: {
-        subtitle: "Página com navegação simples, imitando a estilização de uma rede social, sendo voltada para poesias e fotografia.",
+      modals: {
+        confirmation: "Mensagem enviada com sucesso!",
+        subtitle1: "Página com navegação simples, imitando a estilização de uma rede social, sendo voltada para poesias e fotografia.",
       }
     }
   },
@@ -62,6 +64,7 @@ const resources = {
         btnContato: "Contact-me",
         btnProjeto: "View Project",
         btnRepositorio: "View Repository",
+        btnFechar: "Close"
       },
       header: {
         about: "About",
@@ -102,8 +105,9 @@ const resources = {
         hover: 'Info +',
         proj1: "heartOfPoets"
       },
-      modalProj: {
-        subtitle: "A page with simple navigation, mimicking the style of a social network, focused on poetry and photography.",
+      modals: {
+        confirmation: "Message sent successfully!",
+        subtitle1: "A page with simple navigation, mimicking the style of a social network, focused on poetry and photography.",
       }
     }
   }
