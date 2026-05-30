@@ -56,11 +56,23 @@ Como clonar este projeto:
 ```bash
 git clone https://github.com/isacarrd/portifolioIsacarrd
 ```
+<br>
 
 Instalar dependências:
 ```bash
 npm install
 ```
+
+- Instalando o i18n:
+```bash
+npm install i18next react-i18next i18next-browser-languagedetector
+```
+
+- Instalando o EmailJS:
+```bash
+npm install --save @emailjs/browser
+```
+<br>
 
 Rodar aplicação:
 ```bash
