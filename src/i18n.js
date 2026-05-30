@@ -27,6 +27,7 @@ const resources = {
       infos: {
         title1: "Habilidades",
         title2: "Projetos",
+        title3: "Entre em contato"
       },
       form: {
         title: "Entre em contato",
@@ -34,10 +35,16 @@ const resources = {
         nomeDesc: "Seu nome aqui.",
         emailTitle: "Email:",
         emailDesc: "Endereço de Email.",
-        assuntoTitle: "Assunto:",
+        assuntoTitle: "Assunto/Título:",
         assuntoDesc: "Assunto ou título da mensagem.",
         conteudoTitle: "Conteúdo:",
-        conteudoDesc: "Conteúdo, aquilo que deseja enviar: crítica, proposta, etc."
+        conteudoDesc: "Conteúdo, aquilo que deseja enviar: crítica, proposta, etc.",
+        inputError: {
+          nomeErr: 'Nome não pode ficar vazio!',
+          emailErr: 'Endereço de e-mail inválido!',
+          assuntoErr: 'Assunto não pode ficar vazio!',
+          conteudoErr: 'Conteúdo não pode ficar vazio!',
+        }
       },
       cardProj: {
         hover: 'Info+',
@@ -72,6 +79,7 @@ const resources = {
       infos: {
         title1: "Habilites",
         title2: "Projects",
+        title3: "Get in touch"
       },
       form: {
         title: "Get in touch",
@@ -79,10 +87,16 @@ const resources = {
         nomeDesc: "Your name here.",
         emailTitle: "Email:",
         emailDesc: "Email Address.",
-        assuntoTitle: "Subject:",
+        assuntoTitle: "Subject/Title:",
         assuntoDesc: "Subject or title of the message.",
         conteudoTitle: "Content:",
-        conteudoDesc: "Content, that which you wish to send: criticism, proposal, etc."
+        conteudoDesc: "Content, that which you wish to send: criticism, proposal, etc.",
+        inputError: {
+          nomeErr: 'Name cannot be left blank!',
+          emailErr: 'Invalid email address!',
+          nomeErr: 'Subject cannot remain empty!',
+          nomeErr: 'Content cannot be empty.!',
+        }
       },
       cardProj: {
         hover: 'Info +',
