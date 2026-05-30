@@ -67,7 +67,7 @@
     --info: 0.625rem/100% var(--font-dmSansRegular);
     --footer: 0.875rem/100% var(--font-dmSansBold);
     --inputTitle: 1rem/150% var(--font-dmSansBold);
-    --inputPlace: .75rem/normal var(--font-dmSansRegular);
+    --inputPlace: .625rem/normal var(--font-dmSansRegular);
     --phModal: 1rem/160% var(--font-dmSansRegular);
   }
 }
