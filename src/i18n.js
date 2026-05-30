@@ -94,8 +94,8 @@ const resources = {
         inputError: {
           nomeErr: 'Name cannot be left blank!',
           emailErr: 'Invalid email address!',
-          nomeErr: 'Subject cannot remain empty!',
-          nomeErr: 'Content cannot be empty.!',
+          assuntoErr: 'Subject cannot remain empty!',
+          conteudoErr: 'Content cannot be empty.!',
         }
       },
       cardProj: {
