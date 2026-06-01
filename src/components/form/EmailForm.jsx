@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Button from "../ui/Button";
 import Texto from "../ui/Texto";
 import styles from "./EmailForm.module.css";
+import {ModalConfirmacao} from "../ui/Modals";
 
 function EmailForm() {
   const servID = import.meta.env.VITE_service_ID;
@@ -11,6 +12,10 @@ function EmailForm() {
   const pubKEY = import.meta.env.VITE_pub_KEY;
 
   const { t } = useTranslation();
+  const [showModal, setShowModal] = useState(false);
+  const handleFechar= () => {
+    setShowModal(false)
+  }
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -55,6 +60,11 @@ function EmailForm() {
     emailjs.send(servID, tempID, templateParams, pubKEY).then(
       (response) => {
         console.log("enviado", response.status, response.text);
+        if (response.status === 200) {
+          setShowModal(true)
+        } else {
+          alert(`Falha com status: ${response.status}`);
+        }
         setName("");
         setEmail("");
         setTitle("");
@@ -232,6 +242,12 @@ function EmailForm() {
             {t("btn.btnContato")}
           </Texto>
         </Button>
+        {showModal && (
+          <ModalConfirmacao
+            isOpen={showModal}
+            onClose={handleFechar}
+          />
+        )}
       </form>
     </div>
   );
