@@ -6,37 +6,37 @@ import styles from './Modals.module.css'
 
 import confirmImg from "../../assets/images/icons/confirm.svg"
 
-export default function ModalConfirmacao({ isOpen }) {
+export function ModalConfirmacao({ isOpen, onClose }) {
+  if (!isOpen) return null;
   const { t } = useTranslation();
   
-  if (isOpen) {
     return (
-      <div className={styles.modalConfirm}>
-        <div className={styles.mdDv}>
-          <Texto
-            as="span"
-            color="var(--branco)"
-            font="var(--modalConfirm)"
-            textAlign="center"
-          >
-            {t("modals.confirmation")}
-          </Texto>
-          <img src={confirmImg} alt="Confirmação" />
+      <div className={styles.cfPosition}>
+        <div className={styles.modalConfirm}>
+          <div className={styles.mdCF}>
+            <Texto
+              as="span"
+              color="var(--branco)"
+              font="var(--modalConfirm)"
+              textAlign="center"
+            >
+              {t("modals.confirmation")}
+            </Texto>
+            <img src={confirmImg} alt="Confirmação" />
+          </div>
+          <Button onClick={onClose}>
+            <Texto
+              as='span'
+              font="var(--botao)"
+              color="var(--branco)"
+            >{t("btn.btnFechar")}</Texto>
+          </Button>
         </div>
-        <Button>
-          <Texto
-            as='span'
-            font="var(--botao)"
-            color="var(--branco)"
-          >{t("btn.btnFechar")}</Texto>
-        </Button>
       </div>
     );
   }
-  return null
-}
 
-// export default function ModalProjeto() {
+// export function ModalProjeto() {
 //   return (
 //     <div>Modals</div>
 //   )
