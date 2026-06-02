@@ -8,7 +8,7 @@ function Texto({
   textAlign,
   webkitTextStroke = "none",
   letterSpacing = 0,
-  opacity = 1,
+  opacity,
   ...props
 }) {
   const [isHovered, setIsHovered] = useState(false);
