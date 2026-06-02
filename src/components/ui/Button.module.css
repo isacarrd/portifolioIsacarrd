@@ -1,6 +1,7 @@
 /* Base do botão */
 .btnBase {
-  width: fit-content;
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
