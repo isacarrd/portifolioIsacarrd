@@ -1,22 +1,14 @@
-import { forwardRef } from "react";
 import styles from "./Button.module.css";
 
-const Button = forwardRef(function Button(
-  {
-    tamanho = "btnDesktopPadrao",
-    estilo = "btnPreenchido",
-    children,
-    ...props
-  },
-  ref
-) {
+function Button({tamanho = "btnDesktopPadrao",estilo = "btnPreenchido", children, href, target, ...props}) {
   const buttonStyles = `${styles.btnBase} ${styles[tamanho]} ${styles[estilo]}`;
+  const Especie = href ? "a" : "button";
 
   return (
-    <button ref={ref} className={buttonStyles} {...props}>
+    <Especie href={href} target={target} className={buttonStyles} {...props}>
       {children}
-    </button>
+    </Especie>
   );
-});
+}
 
 export default Button;
