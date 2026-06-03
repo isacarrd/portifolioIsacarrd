@@ -20,14 +20,14 @@
   padding: 1.5rem;
 }
 
-.btnMobilePadrao {
-  /* 12px */
-  padding: 0.75rem;
-}
-
-.btnMobileHeader {
-  /* 4px */
-  padding: 0.25rem;
+@media (max-width: 768px) {
+  .btnDesktopPadrao {
+    width: min-content;
+    padding: 1.5rem;
+  }
+  .btnDesktopHeader {
+    padding: 0.25rem;
+  }
 }
 
 /* Estilos */

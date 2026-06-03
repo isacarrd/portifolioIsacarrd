@@ -1,4 +1,4 @@
-import styles from "./Button.module.css";
+import styles from "./Botao.module.css";
 
 function Button({tamanho = "btnDesktopPadrao",estilo = "btnPreenchido", children, href, target, ...props}) {
   const buttonStyles = `${styles.btnBase} ${styles[tamanho]} ${styles[estilo]}`;
