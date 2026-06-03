@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Button from "./Button";
+import Botao from "./Botao";
 import styles from "./Modals.module.css";
 import Texto from "./Texto";
 
@@ -24,11 +24,11 @@ function ModalConfirmacao({ isOpen, onClose }) {
           </Texto>
           <img src={confirmImg} alt="Confirmação" />
         </div>
-        <Button onClick={onClose}>
+        <Botao onClick={onClose}>
           <Texto as="span" font="var(--botao)" color="var(--branco)">
             {t("btn.btnFechar")}
           </Texto>
-        </Button>
+        </Botao>
       </div>
     </div>
   );
@@ -52,7 +52,7 @@ function ModalProjeto({
       <div className={styles.focusModal}>
         <header>
           <img src="/src/assets/images/logos/catLogo-128.svg" alt="Logo" />
-          <button type="button">
+          <button type="button" onClick={onClose}>
             <img src="/src/assets/images/icons/close.png" alt="Close" />
           </button>
         </header>
@@ -88,16 +88,16 @@ function ModalProjeto({
               </div>
             </div>
             <div className={styles.botoes}>
-              <Button href={urlProj} target={"_blank"}>
+              <Botao href={urlProj} target={"_blank"}>
                 <Texto as="a" color="var(--branco)" font="var(--botaoModal)">
                   {t("btn.btnProjeto")}
                 </Texto>
-              </Button>
-              <Button estilo="btnVazado" href={urlRepo} target={"_blank"}>
+              </Botao>
+              <Botao estilo="btnVazado" href={urlRepo} target={"_blank"}>
                 <Texto as="a" color="var(--branco)" font="var(--botaoModal)">
                   {t("btn.btnRepositorio")}
                 </Texto>
-              </Button>
+              </Botao>
             </div>
           </div>
         </div>
