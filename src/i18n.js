@@ -49,11 +49,15 @@ const resources = {
       },
       cardProj: {
         hover: 'Info+',
-        proj1: "heartOfPoets"
+        proj1: "heartOfPoets",
+        proj2: "Mercadinho Aragão",
+        proj3: "Redragon K530"
       },
       modals: {
         confirmation: "Mensagem enviada com sucesso!",
         subtitle1: "Página com navegação simples, imitando a estilização de uma rede social, sendo voltada para poesias e fotografia.",
+        subtitle2: "Página com navegação simples com o intuito de localizar e valorizar um comércio, demostrando informações do mercadinho.",
+        subtitle3: "Página com navegação simples, tendo como objetivo promover um produto e sua marca, destacando características e seus respectivos parceiros.",
       }
     }
   },
@@ -103,11 +107,15 @@ const resources = {
       },
       cardProj: {
         hover: 'Info +',
-        proj1: "heartOfPoets"
+        proj1: "heartOfPoets",
+        proj2: "Mercadinho Aragão",
+        proj3: "Redragon K530",
       },
       modals: {
         confirmation: "Message sent successfully!",
         subtitle1: "A page with simple navigation, mimicking the style of a social network, focused on poetry and photography.",
+        subtitle2: "A page with simple navigation aimed at locating and promoting a business. Displaying information about the small market.",
+        subtitle3: "A page with simple navigation, aimed at promoting a product and its brand, highlighting its features and respective partners.",
       }
     }
   }
