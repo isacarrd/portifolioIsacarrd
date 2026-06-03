@@ -1,51 +1,54 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import CardProj from "../ui/CardProj";
-import Texto from "../ui/Texto";
-import styles from "./SecaoProjetos.module.css"
 
-import projMercadinho from "../../assets/images/projects/mercadinhoAragao.png"
-import projHearOfPoets from "../../assets/images/projects//heartOfpoets.png"
+import CardProj from "../ui/CardProj";
+import { ModalProjeto } from "../ui/Modals";
+import Texto from "../ui/Texto";
+import styles from "./SecaoProjetos.module.css";
+import { listaProjetos } from "../../data/listaProjetos";
 
 function SecaoProjetos() {
   const { t } = useTranslation();
+
+  const [projetoAtivo, setProjetoAtivo] = useState(null);
+
+  const handleFechar = () => {
+    setProjetoAtivo(null);
+  };
+
+
   return (
     <div className={styles.baseProjetos}>
       <Texto as="h2" color="var(--branco)" font="var(--h2)">
-        {" "}
         {t("infos.title2")}
       </Texto>
       <div className={styles.projs}>
-        <CardProj
-          textoPadrao={t("cardProj.proj1")}
-          textoHover={t("cardProj.hover")}
-          bgImage={projHearOfPoets}
-          bgAlt={"Projeto Heart Of Poets"}
-        />
-        <CardProj
-          textoPadrao={t("cardProj.proj1")}
-          textoHover={t("cardProj.hover")}
-          bgImage={projHearOfPoets}
-          bgAlt={"Projeto Heart Of Poets"}
-        />
-        <CardProj
-          textoPadrao={t("cardProj.proj1")}
-          textoHover={t("cardProj.hover")}
-          bgImage={projHearOfPoets}
-          bgAlt={"Projeto Heart Of Poets"}
-        />
-        <CardProj
-          textoPadrao={t("cardProj.proj1")}
-          textoHover={t("cardProj.hover")}
-          bgImage={projHearOfPoets}
-          bgAlt={"Projeto Heart Of Poets"}
-        />
-        <CardProj
-          textoPadrao={t("cardProj.proj1")}
-          textoHover={t("cardProj.hover")}
-          bgImage={projHearOfPoets}
-          bgAlt={"Projeto Heart Of Poets"}
-        />
+        {listaProjetos.map((proj) => (
+          <CardProj
+            key={proj.id}
+            textoPadrao={t(proj.chaveTitulo)}
+            bgImage={proj.bgImage}
+            bgAlt={proj.bgAlt}
+            onClick={() => {
+              console.log("Card clicado!", proj);
+              setProjetoAtivo(proj);
+            }}
+          />
+        ))}
       </div>
+      {projetoAtivo && (
+        <ModalProjeto
+          isOpen={!!projetoAtivo}
+          onClose={handleFechar}
+          tituloProj={t(projetoAtivo.chaveTitulo)}
+          desc={t(projetoAtivo.chaveDesc)}
+          bgImage={projetoAtivo.bgImage}
+          bgAlt={projetoAtivo.bgAlt}
+          icoProj={projetoAtivo.icoProj}
+          urlProj={projetoAtivo.urlProj}
+          urlRepo={projetoAtivo.urlRepo}
+        />
+      )}
     </div>
   );
 }
