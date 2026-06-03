@@ -1,10 +1,10 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "../ui/Button";
+import Botao from "../ui/Botao";
+import { ModalConfirmacao } from "../ui/Modals";
 import Texto from "../ui/Texto";
 import styles from "./EmailForm.module.css";
-import {ModalConfirmacao} from "../ui/Modals";
 
 function EmailForm() {
   const servID = import.meta.env.VITE_service_ID;
@@ -13,9 +13,9 @@ function EmailForm() {
 
   const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
-  const handleFechar= () => {
-    setShowModal(false)
-  }
+  const handleFechar = () => {
+    setShowModal(false);
+  };
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -45,7 +45,7 @@ function EmailForm() {
 
     if (Object.values(errosAtuais).includes(true)) {
       if (email.trim() && !emailValidated) {
-        alert("Por favor, insira um e-mail válido!")
+        alert("Por favor, insira um e-mail válido!");
       }
       return;
     }
@@ -61,7 +61,7 @@ function EmailForm() {
       (response) => {
         console.log("enviado", response.status, response.text);
         if (response.status === 200) {
-          setShowModal(true)
+          setShowModal(true);
         } else {
           alert(`Falha com status: ${response.status}`);
         }
@@ -237,16 +237,13 @@ function EmailForm() {
             )}
           </div>
         </div>
-        <Button type="submit">
+        <Botao type="submit">
           <Texto color="var(--branco)" font="var(--nav)">
             {t("btn.btnContato")}
           </Texto>
-        </Button>
+        </Botao>
         {showModal && (
-          <ModalConfirmacao
-            isOpen={showModal}
-            onClose={handleFechar}
-          />
+          <ModalConfirmacao isOpen={showModal} onClose={handleFechar} />
         )}
       </form>
     </div>
