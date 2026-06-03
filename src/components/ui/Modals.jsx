@@ -45,6 +45,7 @@ function ModalProjeto({
   urlProj,
   icoProj,
 }) {
+  if (!isOpen) return null;
   const { t } = useTranslation();
 
   return (
