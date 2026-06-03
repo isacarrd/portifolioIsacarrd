@@ -27,12 +27,12 @@
   --home: 8rem/122% var(--font-gamePaused);
   --h1: 4rem / normal var(--font-gamePaused);
   --h2: 3rem / normal var(--font-gamePaused);
-  --h3Modal: 2rem / normal var(--font-gamePaused);
   --modalConfirm: 2.25rem/normal var(--font-gamePaused);
-
+  
   --botao: 2rem / normal var(--font-upheavtt);
   --botaoModal: 1rem / normal var(--font-upheavtt);
-
+  
+  --h3Modal: 2rem / normal var(--font-retroGaming);
   --nav: 1.5rem / normal var(--font-retroGaming);
   --miniCard: 1rem / normal var(--font-retroGaming);
   --cardProj: 1.25rem / normal var(--font-retroGaming);
@@ -53,12 +53,12 @@
     --home: 4rem/80% var(--font-gamePaused);
     --h1: 2.25rem / normal var(--font-gamePaused);
     --h2: 1.5rem / normal var(--font-gamePaused);
-    --h3Modal: 1.25rem / normal var(--font-gamePaused);
     --modalConfirm: 1.5rem/normal var(--font-gamePaused);
-
+    
     --botao: 1rem / normal var(--font-upheavtt);
     --botaoModal: 0.75rem / normal var(--font-upheavtt);
-
+    
+    --h3Modal: 1.25rem / normal var(--font-retroGaming);
     --nav: 0.75rem / normal var(--font-retroGaming);
     --miniHome: 0.625rem / normal var(--font-retroGaming);
     --cardProj: 0.875rem / normal var(--font-retroGaming);
