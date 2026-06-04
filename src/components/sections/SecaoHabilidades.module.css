@@ -1,0 +1,21 @@
+.habilidades{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem 1.25rem;
+  gap: 4rem;
+}
+
+.cards{
+  width: 100%;
+  max-width: 101.625rem;
+  min-width: 18.125rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem 2rem;
+}
