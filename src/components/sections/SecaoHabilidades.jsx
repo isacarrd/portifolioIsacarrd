@@ -16,7 +16,7 @@ import typeIcon from "../../assets/images/devicons/typescriptOrange.svg";
 function SecaoHabilidades() {
   const { t } = useTranslation();
   return (
-    <div className={styles.habilidades}>
+    <section className={styles.habilidades}>
       <Texto as="h2" color="var(--branco)" font="var(--h2)" textAlign="center">
         {t("infos.title1")}
       </Texto>
@@ -39,7 +39,7 @@ function SecaoHabilidades() {
           langName={"Supabase"}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

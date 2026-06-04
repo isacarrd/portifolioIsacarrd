@@ -76,7 +76,7 @@ function EmailForm() {
     );
   }
   return (
-    <div className={styles.contato}>
+    <section className={styles.contato}>
       <Texto as="h2" font="var(--h2)" color="var(--branco)">
         {t("infos.title3")}
       </Texto>
@@ -246,7 +246,7 @@ function EmailForm() {
           <ModalConfirmacao isOpen={showModal} onClose={handleFechar} />
         )}
       </form>
-    </div>
+    </section>
   );
 }
 

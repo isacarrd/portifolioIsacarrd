@@ -18,7 +18,7 @@ function SecaoProjetos() {
 
 
   return (
-    <div className={styles.baseProjetos}>
+    <section className={styles.baseProjetos}>
       <Texto as="h2" color="var(--branco)" font="var(--h2)">
         {t("infos.title2")}
       </Texto>
@@ -49,7 +49,7 @@ function SecaoProjetos() {
           urlRepo={projetoAtivo.urlRepo}
         />
       )}
-    </div>
+    </section>
   );
 }
 
