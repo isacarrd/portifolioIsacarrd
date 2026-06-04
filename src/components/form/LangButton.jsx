@@ -19,7 +19,7 @@ function LangButton() {
     .includes("pt");
 
   return (
-    <div
+    <button
       className={`${styles.langContainer} ${isOpen ? styles.open : ""}`}
       onClick={toggleMenu}
       onMouseLeave={() => setIsOpen(false)}
@@ -50,12 +50,12 @@ function LangButton() {
           <div
             className={`${styles.flag} ${isPt ? styles.us : styles.br}`}
           ></div>
-          <Texto as="span" font="var(--miniHome-mb)" color="var(--branco)">
+          <Texto as="span" font="var(--langButton)" color="var(--branco)">
             {isPt ? "EN-US" : "PT-BR"}
           </Texto>
         </div>
       )}
-    </div>
+    </button>
   );
 }
 
