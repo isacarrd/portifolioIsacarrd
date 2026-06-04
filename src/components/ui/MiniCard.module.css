@@ -1,0 +1,32 @@
+.miniC {
+  width: 15.5rem;
+  height: 15.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 2px solid var(--branco);
+  border-radius: 30px;
+}
+
+.miniC:hover{
+  border-color: var(--laranja);
+}
+
+.lang {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media (max-width: 768px) {
+  .miniC {
+    width: 7.75rem;
+    height: 7.75rem;
+    border-radius: 15px;
+  }
+  .lang {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
