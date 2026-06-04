@@ -19,7 +19,7 @@ const resources = {
       },
       hero: {
         title: "Visitante",
-        sub: "Olá",
+        sub: "Olá,",
       },
       about: {
         title: "Quem sou eu",
@@ -77,7 +77,7 @@ const resources = {
       },
       hero: {
         title: "Visitor",
-        sub: "Hello",
+        sub: "Hello,",
       },
       about: {
         title: "Who am I",
