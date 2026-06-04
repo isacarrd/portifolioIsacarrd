@@ -1,6 +1,3 @@
-// import { useTranslation } from "react-i18next";
-// const { t } = useTranslation();
-
 import projHearOfPoets from "./projects/heartOfpoets.png"
 import projMercadinho from "./projects/mercadinhoAragao.png"
 import projRedragon from "./projects/redDragon.png"
