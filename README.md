@@ -48,6 +48,9 @@ O que foi aplicado:
 <h2 id="started">🚀 | Começando</h2>
 
 Quer rodar este projeto localmente? Aqui está sua solução!
+- <a href="https://www.i18next.com/" target="_blank"> Docs do i18next </a>
+- <a href="https://www.emailjs.com/docs/sdk/installation/" target="_blank"> Docs do EmailJS </a>
+- <a href="https://github.com/ruucm/shadergradient" target="_blank"> Docs do ShaderGradient </a>
 
 <h3>Clonando</h3>
 
@@ -71,6 +74,12 @@ npm install i18next react-i18next i18next-browser-languagedetector
 - Instalando o EmailJS:
 ```bash
 npm install --save @emailjs/browser
+```
+
+- Instalando o ShaderGradient:
+```bash
+npm i @shadergradient/react @react-three/fiber three three-stdlib camera-controls
+npm i -D @types/three
 ```
 <br>
 
