@@ -8,10 +8,16 @@ function LangButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-  const changeLanguage = (e, fallbackLng) => {
+
+  const changeLanguage = async(e, fallbackLng) => {
     e.stopPropagation();
-    i18n.changeLanguage(fallbackLng);
-    setIsOpen(false);
+    try {
+      await i18n.changeLanguage(fallbackLng);
+      setIsOpen(false);
+      window.location.reload();
+    } catch (error) {
+      console.error("Erro ao mudar de idioma:", error);
+    }
   };
 
   const isPt = String(i18n.language || "pt")
