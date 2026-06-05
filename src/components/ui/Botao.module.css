@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
   .btnDesktopPadrao {
-    width: min-content;
+    width: fit-content;
     padding: 1.5rem;
   }
   .btnDesktopHeader {
