@@ -51,6 +51,7 @@ Quer rodar este projeto localmente? Aqui está sua solução!
 - <a href="https://www.i18next.com/" target="_blank"> Docs do i18next </a>
 - <a href="https://www.emailjs.com/docs/sdk/installation/" target="_blank"> Docs do EmailJS </a>
 - <a href="https://github.com/ruucm/shadergradient" target="_blank"> Docs do ShaderGradient </a>
+- <a href="https://reactbits.dev/text-animations/text-type?typingSpeed=130" target="_blank"> Docs do React Bits </a>
 
 <h3>Clonando</h3>
 
@@ -81,6 +82,12 @@ npm install --save @emailjs/browser
 npm i @shadergradient/react @react-three/fiber three three-stdlib camera-controls
 npm i -D @types/three
 ```
+
+- Instalando animação do React bits(gsap):
+```bash
+npm install gsap
+```
+
 <br>
 
 Rodar aplicação:
