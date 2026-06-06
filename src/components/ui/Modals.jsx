@@ -51,9 +51,9 @@ function ModalProjeto({
   return (
     <div className={styles.pjPosition}>
       <div className={styles.focusModal}>
-        <header>
+        <header className={styles.modalHeader}>
           <img src="/src/assets/images/logos/catLogo-128.svg" alt="Logo" />
-          <button type="button" onClick={onClose}>
+          <button type="button" onClick={onClose} className={styles.btnClose}>
             <img src="/src/assets/images/icons/close.png" alt="Close" />
           </button>
         </header>
