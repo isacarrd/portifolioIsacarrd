@@ -3,13 +3,13 @@ import { useTranslation } from "react-i18next";
 import style from "./App.module.css";
 import "./index.css";
 
-import LangButton from "./components/form/LangButton";
+import EmailForm from "./components/form/EmailForm";
+import Header from "./components/sections/Header";
+import SecaoHabilidades from "./components/sections/SecaoHabilidades";
+import SecaoProjetos from "./components/sections/SecaoProjetos";
+import Botao from "./components/ui/Botao";
 import Texto from "./components/ui/Texto";
 import TextType from "./components/ui/TextType";
-import Botao from "./components/ui/Botao"
-import SecaoHabilidades from "./components/sections/SecaoHabilidades"
-import SecaoProjetos from "./components/sections/SecaoProjetos"
-import EmailForm from "./components/form/EmailForm"
 
 function App() {
   const { t } = useTranslation();
@@ -25,45 +25,7 @@ function App() {
         </ShaderGradientCanvas>
       </div>
       <div className={style.noise} />
-      <header className={style.headerPort}>
-        <nav>
-          <ul>
-            <li>
-              <Texto
-                as="a"
-                color="var(--branco)"
-                font="var(--nav)"
-                href="#sobre"
-              >
-                {t("header.about")}
-              </Texto>
-            </li>
-            <li>
-              <Texto
-                as="a"
-                color="var(--branco)"
-                font="var(--nav)"
-                href="#habilites"
-              >
-                {t("header.habilites")}
-              </Texto>
-            </li>
-            <li>
-              <Texto
-                as="a"
-                color="var(--branco)"
-                font="var(--nav)"
-                href="#projects"
-              >
-                {t("header.projects")}
-              </Texto>
-            </li>
-            <div className={style.espacoLing} role="button">
-              <LangButton />
-            </div>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <section className={style.hero}>
         <div className={style.tit}>
           <TextType
@@ -118,7 +80,7 @@ function App() {
         </div>
       </section>
       <main>
-        <section className={style.about}>
+        <section className={style.about} id="about">
           <div className={style.abtCont}>
             <div className={style.imgAbt}>
               <img
@@ -177,7 +139,7 @@ function App() {
                   download="CV.docx"
                   type="application/docx"
                 >
-                  <Texto as="a" color="var(--branco)" font="var(--botao)">
+                  <Texto as="span" color="var(--branco)" font="var(--botao)">
                     {t("btn.btnCv")}
                   </Texto>
                 </Botao>
@@ -189,14 +151,53 @@ function App() {
         <SecaoProjetos />
       </main>
       <EmailForm />
+      <section id="card-info" className={style.cardInfo}>
+        <article className={style.cartao}>
+          <span className={style.retangle}></span>
+          <div className={style.cardCont}>
+            <div className={style.ladoEsq}>
+              <span className={style.esqInfo}>
+                <img
+                  src="./src/assets/images/icons/linkedinOut.svg"
+                  alt="Linkedin"
+                />
+                <p className={style.cardP}>Isabele Cardoso</p>
+              </span>
+              <span className={style.esqInfo}>
+                <img src="./src/assets/images/icons/email.png" alt="Email" />
+                <p className={style.cardP}>isacarrddev@gmail.com</p>
+              </span>
+              <span className={style.esqInfo}>
+                <img
+                  src="./src/assets/images/icons/githubBl.svg"
+                  alt="Github"
+                />
+                <p className={style.cardP}>isacarrd</p>
+              </span>
+            </div>
+            <div className={style.ladoDir}>
+              <img
+                src="/src/assets/images/logos/teste.png"
+                alt="Logo"
+                className={style.logoCard}
+              />
+              <Botao
+                href={"/src/data/CV.docx"}
+                download="CV.docx"
+                type="application/docx"
+              >
+                <Texto as="span" color="var(--branco)" font="var(--botao)">
+                  {t("btn.btnCv")}
+                </Texto>
+              </Botao>
+            </div>
+          </div>
+        </article>
+      </section>
       <footer>
         <div className={style.fotTxt}>
           <img src="./src/assets/images/icons/copyright.svg" alt="Copyright" />
-          <Texto
-            as="span"
-            color="var(--preto)"
-            font="var(--footer)"
-          >
+          <Texto as="span" color="var(--preto)" font="var(--footer)">
             2026
           </Texto>
         </div>
