@@ -9,6 +9,7 @@
 }
 
 .projs{
+  width: 100%;
   max-width: 57.5rem;
   display: flex;
   flex-direction: row;
@@ -16,4 +17,11 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   padding: .625rem;
+}
+
+@media (max-width: 1024px) {
+  .baseProjetos{
+    padding: 2.5rem;
+    gap: 2rem;
+  }
 }
