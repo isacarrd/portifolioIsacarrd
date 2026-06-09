@@ -11,6 +11,15 @@ import Botao from "./components/ui/Botao";
 import Texto from "./components/ui/Texto";
 import TextType from "./components/ui/TextType";
 
+import catLogo from "./assets/images/logos/catLogo-256.svg"
+import logoCode from "./assets/images/logos/teste.png"
+import linkdnWh from "./assets/images/icons/linkedin.svg"
+import githubWh from "./assets/images/icons/github.svg"
+import linkdnOut from "./assets/images/icons/linkedinOut.svg"
+import githubBl from "./assets/images/icons/githubBl.svg"
+import emailIco from "./assets/images/icons/email.png"
+import copyIco from "./assets/images/icons/copyright.svg"
+
 function App() {
   const { t } = useTranslation();
 
@@ -83,10 +92,7 @@ function App() {
         <section className={style.about} id="about">
           <div className={style.abtCont}>
             <div className={style.imgAbt}>
-              <img
-                src="/src/assets/images/logos/catLogo-256.svg"
-                alt="CatLogo"
-              />
+              <img src={catLogo} alt="CatLogo" />
             </div>
             <div className={style.info}>
               <div className={style.textos}>
@@ -114,24 +120,20 @@ function App() {
               <div className={style.links}>
                 <div className={style.linkSocial}>
                   <a
+                    className={style.lkAbt}
                     href="https://www.linkedin.com/in/isabele-cardoso-arag%C3%A3o-isacarrd/"
                     target="_blank"
                     rel="author"
                   >
-                    <img
-                      src="/src/assets/images/icons/linkedin.svg"
-                      alt="Linkedin"
-                    />
+                    <img src={linkdnWh} alt="Linkedin" />
                   </a>
                   <a
+                    className={style.lkAbt}
                     href="https://github.com/isacarrd"
                     target="_blank"
                     rel="author"
                   >
-                    <img
-                      src="/src/assets/images/icons/github.svg"
-                      alt="Github"
-                    />
+                    <img src={githubWh} alt="Github" />
                   </a>
                 </div>
                 <Botao
@@ -157,30 +159,20 @@ function App() {
           <div className={style.cardCont}>
             <div className={style.ladoEsq}>
               <span className={style.esqInfo}>
-                <img
-                  src="./src/assets/images/icons/linkedinOut.svg"
-                  alt="Linkedin"
-                />
+                <img src={linkdnOut} alt="Linkedin" />
                 <p className={style.cardP}>Isabele Cardoso</p>
               </span>
               <span className={style.esqInfo}>
-                <img src="./src/assets/images/icons/email.png" alt="Email" />
+                <img src={emailIco} alt="Email" />
                 <p className={style.cardP}>isacarrddev@gmail.com</p>
               </span>
               <span className={style.esqInfo}>
-                <img
-                  src="./src/assets/images/icons/githubBl.svg"
-                  alt="Github"
-                />
+                <img src={githubBl} alt="Github" />
                 <p className={style.cardP}>isacarrd</p>
               </span>
             </div>
             <div className={style.ladoDir}>
-              <img
-                src="/src/assets/images/logos/teste.png"
-                alt="Logo"
-                className={style.logoCard}
-              />
+              <img src={logoCode} alt="Logo" className={style.logoCard} />
               <Botao
                 href={"/src/data/CV.docx"}
                 download="CV.docx"
@@ -196,8 +188,13 @@ function App() {
       </section>
       <footer>
         <div className={style.fotTxt}>
-          <img src="./src/assets/images/icons/copyright.svg" alt="Copyright" />
-          <Texto as="span" color="var(--preto)" font="var(--footer)">
+          <img src={copyIco} alt="Copyright" />
+          <Texto
+            as="span"
+            color="var(--preto)"
+            font="var(--footer)"
+            disableHover={true}
+          >
             2026
           </Texto>
         </div>
