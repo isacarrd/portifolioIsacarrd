@@ -9,16 +9,17 @@ function Texto({
   webkitTextStroke = "none",
   letterSpacing = 0,
   opacity,
+  hoverColor,
+  disableHover = false,
   ...props
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const Txt = as;
-  let corFinal = color;
 
-  if (Txt === "a") {
-    corFinal = isHovered ? "var(--laranja)" : color || "var(--branco)";
-  }
+  const corBase = color || (Txt === "a" || Txt === "span" ? "var(--branco)" : undefined);
+  const corDeHover = hoverColor || (Txt === "a" || Txt === "span" ? "var(--laranja)" : corBase);
+  const corFinal = isHovered && !disableHover ? corDeHover : corBase;
 
   return (
     <Txt
@@ -28,12 +29,12 @@ function Texto({
         WebkitTextStroke: webkitTextStroke,
         letterSpacing: letterSpacing,
         opacity: opacity,
-        textAlign:textAlign,
+        textAlign: textAlign,
         textDecoration: Txt === "a" ? "none" : undefined,
-        transition: Txt === "a" ? "color 0.3s ease" : "none",
+        transition: disableHover ? "none" : "color 0.3s ease",
       }}
-      onMouseEnter={Txt === "a" ? () => setIsHovered(true) : undefined}
-      onMouseLeave={Txt === "a" ? () => setIsHovered(false) : undefined}
+      onMouseEnter={!disableHover ? () => setIsHovered(true) : undefined}
+      onMouseLeave={!disableHover ? () => setIsHovered(false) : undefined}
       {...props}
     >
       {children}
