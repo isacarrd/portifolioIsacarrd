@@ -47,7 +47,7 @@
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .cardBase {
     width: 12.25rem;
     height: 6.125rem;

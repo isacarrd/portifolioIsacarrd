@@ -19,7 +19,7 @@
   height: 6rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .miniC {
     width: 7.75rem;
     height: 7.75rem;
