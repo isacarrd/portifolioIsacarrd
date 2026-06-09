@@ -56,7 +56,7 @@ function LangButton() {
           <div
             className={`${styles.flag} ${isPt ? styles.us : styles.br}`}
           ></div>
-          <Texto as="span" font="var(--langButton)" color="var(--branco)">
+          <Texto as="span" font="var(--langButton)" color="var(--branco)" disableHover={true}>
             {isPt ? "EN-US" : "PT-BR"}
           </Texto>
         </div>

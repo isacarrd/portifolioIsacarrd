@@ -10,6 +10,7 @@ function MiniCard({ icoLang, langAlt, langName }) {
         color="var(--branco)"
         font="var(--miniCard)"
         textAlign="center"
+        disableHover={true}
       >
         {langName}
       </Texto>

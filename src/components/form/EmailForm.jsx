@@ -238,7 +238,7 @@ function EmailForm() {
           </div>
         </div>
         <Botao type="submit">
-          <Texto color="var(--branco)" font="var(--nav)">
+          <Texto as="span" color="var(--branco)" font="var(--nav)" >
             {t("btn.btnContato")}
           </Texto>
         </Botao>

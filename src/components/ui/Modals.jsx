@@ -5,6 +5,8 @@ import styles from "./Modals.module.css";
 import Texto from "./Texto";
 
 import confirmImg from "../../assets/images/icons/confirm.svg";
+import xOut from "../../assets/images/icons/close.png"
+import logoCode from "../../assets/images/logos/teste.png"
 
 function ModalConfirmacao({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -52,9 +54,9 @@ function ModalProjeto({
     <div className={styles.pjPosition}>
       <div className={styles.focusModal}>
         <header className={styles.modalHeader}>
-          <img src="/src/assets/images/logos/catLogo-128.svg" alt="Logo" />
+          <img src={logoCode} alt="Logo" />
           <button type="button" onClick={onClose} className={styles.btnClose}>
-            <img src="/src/assets/images/icons/close.png" alt="Close" />
+            <img src={xOut} alt="Close" />
           </button>
         </header>
         <div className={styles.projeto}>

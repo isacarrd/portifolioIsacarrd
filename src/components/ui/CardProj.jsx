@@ -35,6 +35,7 @@ function CardProj({
           webkitTextStroke="0.5px var(--laranja)"
           textAlign="center"
           letterSpacing="var(--padrao-opacity)"
+          disableHover={true}
         >
           {isHovered ? textoHover : textoPadrao}
         </Texto>
