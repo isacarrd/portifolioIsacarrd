@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <b>Portfólio autoral de Isabele Cardoso (isacarrd)</b>
+    <b>Portfólio autoral de Isabele Cardoso(isacarrd)</b>
 </p>
 
 <p align="center">
