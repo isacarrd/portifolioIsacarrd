@@ -87,11 +87,11 @@
 button {
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .btnClose:hover{
-  background-color: var(--cinza);
+  cursor: pointer;
+  background-color: #2424249f;
 }
 
 header img {
