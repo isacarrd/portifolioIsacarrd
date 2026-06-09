@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Porifólio</h1>
+<h1 align="center" style="font-weight: bold;">Portfólio</h1>
 
 <p align="center">
   <a href="#objective">Objetivo</a> • 
@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <b>Portifólio autoral de Isabele Cardoso (isacarrd)</b>
+    <b>Portfólio autoral de Isabele Cardoso (isacarrd)</b>
 </p>
 
 <p align="center">
