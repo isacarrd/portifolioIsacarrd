@@ -49,7 +49,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   :root {
     --home: 4rem/80% var(--font-gamePaused);
     --h1: 2.25rem / normal var(--font-gamePaused);
