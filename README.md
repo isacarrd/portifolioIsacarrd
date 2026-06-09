@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">
-     <a href="#">🚦 Projeto</a>
-     <a href="https://www.figma.com/community/file/1642193222061811502">🚧 Figma</a>
+     <a href="https://isacarrd.vercel.app/" target="_blank">🚦 Projeto</a>
+     <a href="https://www.figma.com/community/file/1642193222061811502" target="_blank">🚧 Figma</a>
 </p>
 
 <h2 id="layout">🎨 Visão da página</h2>
@@ -62,10 +62,19 @@ git clone https://github.com/isacarrd/portifolioIsacarrd
 ```
 <br>
 
-Instalar dependências:
+Instalando dependências:
 ```bash
 npm install
 ```
+
+Rodando a aplicação:
+```bash
+npm run dev
+```
+
+<br>
+
+<h3>Comandos usados</h3>
 
 - Instalando o i18n:
 ```bash
@@ -86,11 +95,4 @@ npm i -D @types/three
 - Instalando animação do React bits(gsap):
 ```bash
 npm install gsap
-```
-
-<br>
-
-Rodar aplicação:
-```bash
-npm run dev
 ```
