@@ -33,6 +33,9 @@ const TextType = ({
   onSentenceComplete,
   startOnVisible = false,
   reverseMode = false,
+  variableSpeedEnabled,
+  variableSpeedMin,
+  variableSpeedMax,
   ...props
 }) => {
   const [displayedText, setDisplayedText] = useState("");
@@ -177,7 +180,11 @@ const TextType = ({
     },
     <span
       className="text-type__content"
-      style={{ font: font, opacity: opacity, color: getCurrentTextColor() || "inherit" }}
+      style={{
+        font: font,
+        opacity: opacity,
+        color: getCurrentTextColor() || "inherit",
+      }}
     >
       {displayedText}
     </span>,
@@ -186,8 +193,8 @@ const TextType = ({
         ref={cursorRef}
         className={`text-type__cursor ${cursorClassName} ${
           shouldHideCursor ? "text-type__cursor--hidden" : ""
-          }`}
-        style={{font:font, color: color}}
+        }`}
+        style={{ font: font, color: color }}
       >
         {cursorCharacter}
       </span>
