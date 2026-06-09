@@ -18,7 +18,7 @@ function SecaoProjetos() {
 
 
   return (
-    <section className={styles.baseProjetos}>
+    <section className={styles.baseProjetos} id="projects">
       <Texto as="h2" color="var(--branco)" font="var(--h2)">
         {t("infos.title2")}
       </Texto>

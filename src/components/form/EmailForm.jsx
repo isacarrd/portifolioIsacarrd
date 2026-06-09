@@ -76,7 +76,7 @@ function EmailForm() {
     );
   }
   return (
-    <section className={styles.contato}>
+    <section className={styles.contato} id="contact">
       <Texto as="h2" font="var(--h2)" color="var(--branco)">
         {t("infos.title3")}
       </Texto>
