@@ -1,4 +1,4 @@
-button{
+button {
   all: unset;
 }
 
@@ -129,5 +129,13 @@ button{
   .arrowContainer {
     width: 20px;
     height: 20px;
+  }
+  .arrowContainerDown {
+    background-image: url("/src/assets/images/icons/selectDown-mb.svg");
+    background-position: center center;
+  }
+  .arrowContainerTop {
+    background-image: url("/src/assets/images/icons/selectTOP-mb.svg");
+    background-position: center center;
   }
 }
