@@ -1,6 +1,7 @@
 /* Base do botão */
 .btnBase {
   width: fit-content;
+  height: fit-content;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -24,9 +25,10 @@
 @media (max-width: 1024px) {
   .btnDesktopPadrao {
     width: fit-content;
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .btnDesktopHeader {
+    width: fit-content;
     padding: 0.25rem;
   }
 }
