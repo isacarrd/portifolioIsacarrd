@@ -31,7 +31,7 @@ function SecaoHabilidades() {
           langName={"JavaScript"}
         />
         <MiniCard icoLang={reactIcon} langAlt={"React"} langName={"ReactJS"} />
-        <MiniCard icoLang={nodeIcon} langAlt={"NodeJS"} langName={"NodeJS"} />
+        {/* <MiniCard icoLang={nodeIcon} langAlt={"NodeJS"} langName={"NodeJS"} />
         <MiniCard
           icoLang={typeIcon}
           langAlt={"TypeScript"}
@@ -41,7 +41,7 @@ function SecaoHabilidades() {
           icoLang={supaIcon}
           langAlt={"Supabase"}
           langName={"Supabase"}
-        />
+        /> */}
       </div>
     </section>
   );
