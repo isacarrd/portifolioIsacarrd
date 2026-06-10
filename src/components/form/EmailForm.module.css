@@ -60,7 +60,8 @@ textarea:focus {
 input:focus,
 textarea:focus {
   /* box-shadow: 0px 0px 9px 0px var(--laranja); */
-  box-shadow: 0px 0px 0px 1px var(--laranja);
+  /* box-shadow: 0px 0px 0px 1px var(--laranja); */
+  border: 2px solid var(--laranja);
 }
 
 ::placeholder {
