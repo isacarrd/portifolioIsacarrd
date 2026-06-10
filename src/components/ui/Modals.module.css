@@ -161,7 +161,7 @@ header img {
   .focusModal {
     width: 20rem;
   }
-  header {
+  .modalHeader {
     padding: 1rem 1.5rem;
   }
   header img {
